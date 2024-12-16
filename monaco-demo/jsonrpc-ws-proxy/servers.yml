@@ -1,0 +1,8 @@
+langservers:
+  cpp:
+    - clangd 
+    - --compile-commands-dir
+    - /opt/lab/workspace/2/1112
+  c:
+    - ccls
+    - "--init={\"cacheDirectory\":\"/path/to/cachedir\",\"cacheFormat\":\"json\",\"index\":{\"onChange\":true,\"trackDependency\":2}}"
