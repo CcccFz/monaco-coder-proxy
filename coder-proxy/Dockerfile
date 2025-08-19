@@ -1,4 +1,4 @@
-FROM registry.cn-chengdu.aliyuncs.com/xxx-base/emulation:20.04.app
+FROM registry.cn-chengdu.aliyuncs.com/shy-base/emulation:24.04.app
 WORKDIR /app
 ADD . .
 RUN npm config set registry https://registry.npmmirror.com/ && \

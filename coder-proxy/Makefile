@@ -1,10 +1,10 @@
 .PHONY: run coder
 
-DockerTagRemote=app-fat_app-fat
-DockerNameSpace=registry.cn-chengdu.aliyuncs.com/xxx-app
+DockerTagRemote=app-dev_app-dev
+DockerNameSpace=registry.cn-chengdu.aliyuncs.com/shy-app
 
 run:
-	docker build -f Dockerfile -t registry.cn-chengdu.aliyuncs.com/xxx-app/coder:app-local .
+	docker build -f Dockerfile -t $(DockerNameSpace)/coder:app-local .
 	docker-compose -f /opt/docker-compose.yml up -d coder
 
 push:
